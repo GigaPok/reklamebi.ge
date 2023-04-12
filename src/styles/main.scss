@@ -1,0 +1,36 @@
+@import "./responsive.scss";
+
+body,
+html {
+  font-family: "Noto Sans Georgian", sans-serif;
+  overflow-x: hidden !important;
+}
+span,
+a,
+button,
+h2 {
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+.container {
+  padding-right: 300px !important;
+  padding-left: 300px !important;
+
+  @include large {
+    padding-right: 150px !important;
+    padding-left: 150px !important;
+  }
+
+  @include mid {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+  @include small {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+}
+
+main {
+  flex: 1;
+}

@@ -1,0 +1,133 @@
+header {
+  background-color: red;
+
+  .topHeader {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8px 0px;
+    background: #34383f;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    max-height: 50px;
+    transition: all 0.3s ease-out 0s;
+  }
+  .main {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    flex: 1 1 0%;
+
+    span {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .langSwitcher {
+    a {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+
+      span {
+        color: #fff;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 8px;
+        letter-spacing: 0.3px;
+      }
+    }
+    .switcher {
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      padding: 2px;
+      display: flex;
+
+      .active {
+        margin-left: 8px;
+        margin-right: 0;
+      }
+
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.5s ease 0s;
+      }
+    }
+  }
+  .headerMain {
+    padding: 16px 0px;
+    background: linear-gradient(92deg, #0cdac3 45%, #4680f2 52%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .wrapperLogoSearch {
+      display: flex;
+      flex: 1 1 0%;
+
+      img {
+        max-width: 70px;
+        object-fit: contain;
+        margin-right: 15px;
+      }
+
+      form {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        flex: 1 1 0%;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        transition: all 0.4s ease 0s;
+
+        input {
+          border: none;
+          line-height: 56px;
+          flex: 1 1 0%;
+          padding: 0px 70px 0px 40px;
+          border-radius: 8px;
+          font-size: 14px;
+        }
+        textarea:focus,
+        input:focus {
+          outline: none;
+        }
+
+        button {
+          visibility: hidden;
+        }
+      }
+    }
+    .WrapperCartProfile {
+      margin-left: 15px;
+      display: flex;
+
+      a {
+        &:first-of-type {
+          margin-right: 20px;
+        }
+        display: flex;
+        text-transform: capitalize;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.6s ease 0s;
+        color: #34383f;
+
+        .userIcon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
