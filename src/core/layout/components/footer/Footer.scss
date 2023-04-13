@@ -1,3 +1,42 @@
 footer {
-  background-color: brown;
+  background-color: #f1f3f6;
+  padding: 60px 0;
+
+  #footer {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      max-width: 220px;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      transition: all 0.5s ease 0s;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 1.22;
+      margin-bottom: 16px;
+      color: #34383f;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-transform: capitalize;
+      font-feature-settings: "case";
+    }
+
+    svg {
+      margin-right: 10px;
+      height: 20px !important;
+      width: 20px !important;
+    }
+  }
+  span {
+    font-size: 12px;
+    text-transform: capitalize;
+    flex: 1 1 0%;
+    color: #34383f;
+  }
 }

@@ -8,5 +8,19 @@
       "cart": "Cart",
       "login": "login"
     }
+  },
+  "footer": {
+    "about": {
+      "tittle": "about us",
+      "text1": "Manifest",
+      "text2": "Blog",
+      "text3": "Faq"
+    },
+    "terms": {
+      "tittle": "Terms and Conditions",
+      "text1": "Terms and Conditions",
+      "text2": "Privacy",
+      "text3": "Return"
+    }
   }
 }
