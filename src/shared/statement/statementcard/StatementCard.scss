@@ -1,0 +1,75 @@
+.statement-card {
+  padding: 25px;
+  border-bottom: 1px solid #d5e0d5;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  p {
+    text-transform: initial;
+    line-height: 1.44;
+    font-size: 14px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+    max-width: 100%;
+    color: #000000;
+  }
+  .wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.4;
+      text-align: left;
+      font-feature-settings: "case";
+    }
+    span {
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 18px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .info-on-statemet {
+    margin: 10px 0;
+    span {
+      line-height: 1;
+      font-size: 12px;
+      color: #5e6d55;
+      margin-left: 10px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .tags {
+    margin: 30px 0;
+    a {
+      margin-left: 10px;
+      background-color: #eaeaea;
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 14px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .location {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

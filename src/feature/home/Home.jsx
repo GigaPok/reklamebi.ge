@@ -6,6 +6,8 @@ import "swiper/css";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
 import testImg from "../../assets/1.png";
+import "./Home.scss";
+import { Statements } from "../../shared";
 
 const array = [
   {
@@ -21,7 +23,7 @@ const array = [
   {
     title: "ხელოსნები",
     img: testImg,
-    link: "/",
+    link: "xelosnebi/",
   },
   {
     title: "სამშენებლო ნარჩენების გატანა",
@@ -48,21 +50,29 @@ const array = [
 export function Home() {
   return (
     <Mainlayout>
-      <div className="container">
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          spaceBetween={50}
-          slidesPerView={5}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          {array.map((el, id) => (
-            <SwiperSlide>
-              <Card key={id} title={el.title} img={el.img} link={el.link} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <div className="container" id="main">
+        <div className="main-top">
+          <Swiper
+            modules={[Navigation]}
+            navigation
+            spaceBetween={50}
+            slidesPerView={5}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            {array.map((el, id) => (
+              <SwiperSlide>
+                <Card key={id} title={el.title} img={el.img} link={el.link} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <span className="hr"></span>
+        <div className="main-content">
+          <h1>მოძებნე, განათავსე განცხადება</h1>
+        </div>
+        <Statements />
       </div>
     </Mainlayout>
   );
