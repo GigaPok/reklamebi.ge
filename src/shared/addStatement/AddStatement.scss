@@ -1,0 +1,103 @@
+#addStatement {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 80px 200px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 35px;
+      gap: 5px;
+
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      label {
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 16px;
+        display: block;
+        margin-top: 8px;
+      }
+      input,
+      textarea,
+      select {
+        padding: 20px;
+        border-radius: 16px;
+        border: solid 2px #6d6d6d;
+        transition: all 0.15s ease-in-out;
+        font-size: 16px;
+      }
+      span {
+        color: #dc3545 !important;
+        margin-top: 1rem;
+        font-weight: 500;
+      }
+    }
+    button {
+      background: linear-gradient(116.41deg, #d6ee47 9.91%, #57dca3 51.54%);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      border: none;
+      color: #22252b;
+      height: 56px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      .disabled {
+        cursor: default;
+        color: #b6b6b6 !important;
+        background: #ededed !important;
+        box-shadow: none !important;
+        border: 0 !important;
+        opacity: 1;
+      }
+    }
+    .select-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .select {
+        border: 2px solid #6d6d6d;
+        color: #22252b;
+        height: 56px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        &:first-of-type {
+          border-radius: 8px 0 0 8px;
+        }
+        &:last-of-type {
+          border-radius: 0 8px 8px 0;
+        }
+
+        span {
+          margin-top: 0;
+          padding: 7px 100px;
+          border-radius: 20px;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          color: #22252b !important;
+        }
+      }
+    }
+  }
+  .preview {
+    display: flex;
+    flex: 1;
+    background-color: aqua;
+  }
+}

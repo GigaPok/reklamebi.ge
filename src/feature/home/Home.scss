@@ -1,6 +1,42 @@
 #main {
   .main-top {
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    .see-all {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      justify-content: center;
+      height: 180px;
+      width: 160px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      margin-right: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.7;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 1rem;
+
+      svg {
+        margin-top: 20px;
+        width: 32px;
+        height: auto;
+      }
+    }
+    .swiper {
+      .slide {
+        height: 180px;
+      }
+    }
   }
   .hr {
     background: linear-gradient(

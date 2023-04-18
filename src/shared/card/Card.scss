@@ -1,8 +1,7 @@
 .card {
   position: relative;
   background-color: #eaeaea;
-  width: 200px;
-  height: 200px;
+  height: 180px;
   border-radius: 8px;
   display: flex;
   text-align: center;
@@ -21,5 +20,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    border-radius: 0px 0 8px 0;
   }
 }

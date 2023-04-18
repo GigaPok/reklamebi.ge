@@ -1,0 +1,36 @@
+#success {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  h2 {
+    color: #1fad45;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  span {
+    font-size: 12px;
+    margin: 1rem 0;
+    max-width: 25%;
+    text-align: center;
+    line-height: 18px;
+  }
+  svg {
+    margin-bottom: 20px;
+    fill: #1fad45;
+  }
+  button {
+    background: linear-gradient(116.41deg, #d6ee47 9.91%, #57dca3 51.54%);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: none;
+    color: #22252b;
+    height: 56px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

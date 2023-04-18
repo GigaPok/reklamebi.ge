@@ -18,13 +18,19 @@ import "aos/dist/aos.css";
 export default function StatementCard() {
   const [show, setShow] = useState(false);
 
+  const triggerPopup = (e) => {
+    if (!e.target.parentElement.classList.contains("tags")) {
+      setShow(true);
+    }
+  };
+
   useEffect(() => {
     Aos.init();
   }, []);
 
   return (
     <>
-      <div className="statement-card" onClick={() => setShow(true)}>
+      <div className="statement-card" onClick={triggerPopup}>
         <div className="wrapper-top">
           <h2>ვეძებ ხელოსანს, რომელიც დამიმონტაჟებს ონკანს</h2>
           <div>

@@ -56,3 +56,9 @@ main {
 .border-left {
   border-left: 1px solid #d5e0d5;
 }
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}

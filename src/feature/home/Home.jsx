@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import testImg from "../../assets/1.png";
 import "./Home.scss";
 import { Statements } from "../../shared";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const array = [
   {
@@ -45,6 +47,26 @@ const array = [
     img: testImg,
     link: "/",
   },
+  {
+    title: "მოგზაურობა",
+    img: testImg,
+    link: "/",
+  },
+  {
+    title: "მოგზაურობა",
+    img: testImg,
+    link: "/",
+  },
+  {
+    title: "მოგზაურობა",
+    img: testImg,
+    link: "/",
+  },
+  {
+    title: "მოგზაურობა",
+    img: testImg,
+    link: "/",
+  },
 ];
 
 export function Home() {
@@ -52,16 +74,51 @@ export function Home() {
     <Mainlayout>
       <div className="container" id="main">
         <div className="main-top">
+          <div className="see-all">
+            ყველა
+            <br />
+            კატეგორია
+            <FontAwesomeIcon icon={faBars} />
+          </div>
           <Swiper
             modules={[Navigation]}
             navigation
-            spaceBetween={50}
-            slidesPerView={5}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            spaceBetween={15}
+            slidesPerView={8}
+            className="swiper"
+            breakpoints={{
+              0: {
+                spaceBetween: 10,
+                slidesPerView: 1,
+              },
+              480: {
+                spaceBetween: 10,
+                slidesPerView: 2,
+              },
+              768: {
+                spaceBetween: 15,
+                slidesPerView: 3,
+              },
+              1024: {
+                spaceBetween: 15,
+                slidesPerView: 4,
+              },
+              1280: {
+                spaceBetween: 15,
+                slidesPerView: 5,
+              },
+              1400: {
+                spaceBetween: 15,
+                slidesPerView: 6,
+              },
+              1900: {
+                spaceBetween: 15,
+                slidesPerView: 8,
+              },
+            }}
           >
             {array.map((el, id) => (
-              <SwiperSlide>
+              <SwiperSlide className="slide">
                 <Card key={id} title={el.title} img={el.img} link={el.link} />
               </SwiperSlide>
             ))}
