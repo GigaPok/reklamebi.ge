@@ -5,7 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
-import testImg from "../../assets/1.png";
+import xelosnebi from "../../assets/xelosnebi.png";
+import avejisGadazidva from "../../assets/avejis-gadazidva.jpg";
+import binebiDgiurad from "../../assets/binebi-dgiurad.png";
+import fitness from "../../assets//fitness-varjishi.png";
+import mogzauroba from "../../assets/mogzauroba.png";
+import manqanisXelosani from "../../assets/manqanis-xelosani.png";
 import "./Home.scss";
 import { Statements } from "../../shared";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -13,58 +18,59 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const array = [
   {
-    title: "ავეჯის გადატანა",
-    img: testImg,
-    link: "/",
-  },
-  {
-    title: "რემონტი",
-    img: testImg,
-    link: "/",
-  },
-  {
     title: "ხელოსნები",
-    img: testImg,
+    img: xelosnebi,
     link: "xelosnebi/",
   },
   {
+    title: "ავეჯის გადატანა",
+    img: avejisGadazidva,
+    link: "/",
+  },
+  {
+    title: "მანქანის ხელოსანი",
+    img: manqanisXelosani,
+    link: "/",
+  },
+
+  {
     title: "სამშენებლო ნარჩენების გატანა",
-    img: testImg,
+    img: avejisGadazidva,
     link: "/",
   },
   {
     title: "ბინები დღიურად",
-    img: testImg,
+    img: binebiDgiurad,
     link: "/",
   },
   {
     title: "ფიტნესი",
-    img: testImg,
+    img: fitness,
     link: "/",
   },
   {
     title: "მოგზაურობა",
-    img: testImg,
+    img: mogzauroba,
     link: "/",
   },
   {
     title: "მოგზაურობა",
-    img: testImg,
+    img: avejisGadazidva,
     link: "/",
   },
   {
     title: "მოგზაურობა",
-    img: testImg,
+    img: avejisGadazidva,
     link: "/",
   },
   {
     title: "მოგზაურობა",
-    img: testImg,
+    img: avejisGadazidva,
     link: "/",
   },
   {
     title: "მოგზაურობა",
-    img: testImg,
+    img: avejisGadazidva,
     link: "/",
   },
 ];

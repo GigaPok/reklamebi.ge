@@ -74,8 +74,8 @@ export function Footer() {
         <div>
           <h2>გამოგვყევი</h2>
           <ul>
-            {social.map((el) => (
-              <li>
+            {social.map((el, key) => (
+              <li key={key}>
                 <Link to={el.link}>
                   <FontAwesomeIcon icon={el.icon} />
                   {el.title}
