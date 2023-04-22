@@ -3,7 +3,6 @@
 body,
 html {
   font-family: "Noto Sans Georgian", sans-serif;
-  overflow-x: hidden !important;
 }
 span,
 a,
@@ -76,4 +75,9 @@ select,
 option,
 a {
   color: #000000;
+}
+
+.body-scroll-off {
+  height: 100vh;
+  overflow: hidden !important;
 }

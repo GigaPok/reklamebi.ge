@@ -24,6 +24,10 @@ export default function StatementCard() {
     }
   };
 
+  if (show) {
+    document.body.className = "body-scroll-off";
+  }
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -190,7 +194,6 @@ export default function StatementCard() {
               <div></div>
             </div>
           </div>
-          {(document.body.style.height = "100vh")}
         </div>
       )}
     </>

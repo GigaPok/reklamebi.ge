@@ -1,43 +1,4 @@
 #main {
-  .main-top {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    .see-all {
-      display: flex;
-      flex-direction: column;
-      -webkit-box-align: center;
-      align-items: center;
-      justify-content: center;
-      height: 180px;
-      width: 160px;
-      flex-shrink: 0;
-      border-radius: 8px;
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255);
-      margin-right: 15px;
-      cursor: pointer;
-      font-size: 14px;
-      line-height: 1.7;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-size: 1rem;
-
-      svg {
-        margin-top: 20px;
-        width: 32px;
-        height: auto;
-      }
-    }
-    .swiper {
-      .slide {
-        height: 180px;
-      }
-    }
-  }
   .hr {
     background: linear-gradient(
       270.08deg,
@@ -63,34 +24,4 @@
       margin-bottom: 40px;
     }
   }
-
-  // Slider Style
-  .swiper-button-disabled {
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    border: 1.5px solid rgb(236, 239, 241);
-    box-shadow: rgb(212, 215, 217) 0px 4px 12px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
-    &::after {
-      font-size: 14px;
-      font-weight: bold;
-    }
-  }
-  // finish slider style
 }

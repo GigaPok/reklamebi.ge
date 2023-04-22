@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Card.scss";
 
-export function Card({ link, img, title }) {
+export function Card({ className, img, title }) {
   return (
-    <div className="card">
-      <Link to={link}>
-        {title}
+    <div className={`${className} card`}>
+      <button>
+        <span>{title}</span>
+
         <img src={img} alt={title}></img>
-      </Link>
+      </button>
     </div>
   );
 }
